@@ -34,30 +34,33 @@
         <div class="row">
             <form id="form" class="col-lg-6 col-8 mx-auto">
               <div class="input-group">
-                <input id="input" class="form-control" placeholder="Enter todo list item">
+                <input type ="text" id="todovalue" class="form-control" placeholder="Enter todo list item">
                 <span>
-                  <button id="btn" type="button" class="btn btn-primary">Submit</button>
+                  <button id="btnAdd" onclick = "addList()" type="button" class="btn btn-primary" value="add to list">Submit</button>
                 </span>
               </div>			     
             </form>
           </div>			
           <div class="row">				
             <ul id="list" class="list col-lg-6 col-8 mx-auto">
-              <li>this is a todo item <input type="checkbox" class="checkbox"></li>
-              <li>this is a todo item <input type="checkbox" class="checkbox"></li>
+              <!-- LIST ITEMS GOES HERE -->
             </ul>
           </div>
           <div class="row">
-            <button id="btnClr" type="button" class="btn btn-primary mx-auto btnHide">Clear</button>
+            <button id="btnClr" onclick ="deleteList()" type="reset" class="btn btn-primary mx-auto btnHide" value="Reset">Clear</button>
           </div>				
         </div>
       </div>
       </div>
     </div>
       
-
-      <!-- materialize JS -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+      <!-- inline script -->
+      <!-- <script>
+      let checker = document.getElementById("checklist");
+        if (checker.checked) {
+        document.getElementById("li-item").style.textDecoration = "line-through";
+      }
+      </script> -->
       <!-- Boostrap JS-->
       <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -75,5 +78,6 @@
     crossorigin="anonymous"
     ></script>
     <script src="javascript/slide-menu.js"></script>
+    <script src="javascript/todo.js"></script>
   </body>
 </html>

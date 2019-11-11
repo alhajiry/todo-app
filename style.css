@@ -97,3 +97,15 @@ li {
     font-size: 18px;
   }
 }
+
+/* checkbox */
+#checklist {
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
